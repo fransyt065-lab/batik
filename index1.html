@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda | Pameran Batik Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes slide {
+        0% {
+          transform: translateX(0%);
+        }
+        33% {
+          transform: translateX(-100%);
+        }
+        66% {
+          transform: translateX(-200%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+      .animate-slide {
+        animation: slide 20s linear infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-indigo-700">Batik Indonesia</h1>
+        <ul class="flex space-x-6 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-indigo-600">Home</a></li>
+          <li><a href="tentang.html" class="hover:text-indigo-600">Tentang</a></li>
+          <li><a href="sejarah.html" class="hover:text-indigo-600">Sejarah</a></li>
+          <li><a href="galeri.html" class="hover:text-indigo-600">Galeri</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="pt-20 relative">
+      <div class="overflow-hidden relative h-72 md:h-96">
+        <div class="absolute inset-0 flex animate-slide">
+          <img src="assets/images/slider1.jpg" class="w-full object-cover" />
+          <img src="assets/images/slider2.jpg" class="w-full object-cover" />
+          <img src="assets/images/slider3.jpg" class="w-full object-cover" />
+        </div>
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+          <div class="text-center text-white">
+            <h2 class="text-3xl md:text-4xl font-bold">BATIK NUSANTARA</h2>
+            <p class="mt-2 text-sm md:text-base">Motif yang bercerita, warna yang bermakna.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sejarah Batik -->
+    <section class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl font-bold text-indigo-700 mb-6 text-center">Sejarah Batik Indonesia</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Batik telah menjadi bagian tak terpisahkan dari budaya Indonesia sejak zaman kerajaan. Awalnya digunakan oleh kalangan bangsawan, batik berkembang menjadi simbol identitas dan spiritualitas.
+          </p>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Pada era kolonial, batik mengalami transformasi melalui pengaruh budaya asing, menghasilkan variasi motif dan teknik yang lebih beragam. Batik pesisir mulai muncul dengan warna cerah dan motif bebas.
+          </p>
+          <p class="text-gray-700 leading-relaxed">Pada tahun 2009, UNESCO menetapkan batik sebagai Warisan Budaya Takbenda Dunia. Sejak itu, batik semakin dikenal secara global dan menjadi kebanggaan nasional.</p>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="assets/images/batik-sejarah.jpg" alt="Sejarah Batik" class="rounded-lg shadow-md w-full h-auto object-cover" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

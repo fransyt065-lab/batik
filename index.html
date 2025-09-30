@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda | Pameran Batik Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Animasi cinematic slide */
+      @keyframes slide {
+        0% {
+          transform: scale(1) translateX(0);
+        }
+        50% {
+          transform: scale(1.1) translateX(-5%);
+        }
+        100% {
+          transform: scale(1) translateX(0);
+        }
+      }
+
+      .animate-slide {
+        animation: slide 5s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-indigo-700">Batik Indonesia</h1>
+        <ul class="flex space-x-6 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-indigo-600">Home</a></li>
+          <li>
+            <a href="tentang.html" class="hover:text-indigo-600">Tentang</a>
+          </li>
+          <li>
+            <a href="sejarah.html" class="hover:text-indigo-600">Sejarah</a>
+          </li>
+          <li>
+            <a href="galeri.html" class="hover:text-indigo-600">Galeri</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="pt-20 relative">
+      <div class="overflow-hidden relative h-72 md:h-96">
+        <img src="assets/images/slider1.jpg" class="w-full h-full object-cover animate-slide" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+          <div class="text-center text-white">
+            <h2 class="text-3xl md:text-4xl font-bold">BATIK NUSANTARA</h2>
+            <p class="mt-2 text-sm md:text-base">Motif yang bercerita, warna yang bermakna.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sejarah Batik -->
+    <section class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl font-bold text-indigo-700 mb-6 text-center">Sejarah Batik Indonesia</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Batik telah menjadi bagian tak terpisahkan dari budaya Indonesia sejak zaman kerajaan. Awalnya digunakan oleh kalangan bangsawan, batik berkembang menjadi simbol identitas dan spiritualitas.
+          </p>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Pada era kolonial, batik mengalami transformasi melalui pengaruh budaya asing, menghasilkan variasi motif dan teknik yang lebih beragam. Batik pesisir mulai muncul dengan warna cerah dan motif bebas.
+          </p>
+          <p class="text-gray-700 leading-relaxed">Pada tahun 2009, UNESCO menetapkan batik sebagai Warisan Budaya Takbenda Dunia. Sejak itu, batik semakin dikenal secara global dan menjadi kebanggaan nasional.</p>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="assets/images/batik-sejarah.jpg" alt="Sejarah Batik" class="rounded-lg shadow-md w-full h-auto object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Cara Pembuatan Batik -->
+    <section class="bg-gray-50 py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-indigo-700 mb-6 text-center">Cara Pembuatan Batik</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-4">
+            <div class="p-4 bg-white rounded-lg shadow">
+              <h3 class="font-semibold text-indigo-600">1. Menyiapkan Kain</h3>
+              <p class="text-gray-700 text-sm">Kain mori dipersiapkan dengan dicuci dan dijemur agar bersih dan siap untuk diberi motif.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow">
+              <h3 class="font-semibold text-indigo-600">2. Membuat Pola</h3>
+              <p class="text-gray-700 text-sm">Pola motif batik digambar di atas kain menggunakan pensil atau langsung dengan canting.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow">
+              <h3 class="font-semibold text-indigo-600">3. Mencanting</h3>
+              <p class="text-gray-700 text-sm">Lilin malam cair diaplikasikan dengan canting untuk menutup bagian yang tidak akan terkena warna.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow">
+              <h3 class="font-semibold text-indigo-600">4. Pewarnaan</h3>
+              <p class="text-gray-700 text-sm">Kain dicelupkan ke dalam pewarna alami atau sintetis. Proses ini bisa dilakukan berulang kali sesuai jumlah warna.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow">
+              <h3 class="font-semibold text-indigo-600">5. Pelorodan</h3>
+              <p class="text-gray-700 text-sm">Kain direbus untuk menghilangkan lilin malam sehingga motif terlihat jelas.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow">
+              <h3 class="font-semibold text-indigo-600">6. Finishing</h3>
+              <p class="text-gray-700 text-sm">Kain batik dijemur, disetrika, lalu siap digunakan sebagai kain, pakaian, atau kerajinan.</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center">
+            <img src="assets/images/batik-canting.jpg" alt="Proses Membatik" class="rounded-lg shadow-md w-full h-auto object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

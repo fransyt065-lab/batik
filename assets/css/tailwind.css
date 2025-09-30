@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwin utilities;
+
+/* Custom animation untuk slider */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
+
+/* Tambahan efek hover mewah */
+.hover-glow:hover {
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.6);
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
